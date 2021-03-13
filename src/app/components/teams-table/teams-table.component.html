@@ -1,0 +1,30 @@
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Country</td>
+                    <td>Foundation</td>
+                    <td>Stadium</td>
+                    <td>Actions</td>
+                </tr>
+                <tr *ngFor='let t of teams'>
+                    <td>{{t.id}}</td>
+                    <td>{{t.name}}</td>
+                    <td>{{t.country}}</td>
+                    <td>{{t.foundation}}</td>
+                    <td>{{t.stadium}}</td>
+                    <td>
+                        <button class="btn btn-success">Display</button>
+                        <button class="btn btn-info">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
